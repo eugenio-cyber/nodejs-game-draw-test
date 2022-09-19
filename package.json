@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/eugenio-cyber/game-backend-teste#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "knex": "^2.3.0",

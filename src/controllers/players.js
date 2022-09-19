@@ -10,7 +10,7 @@ const getPlayers = async (req, res) => {
 
     shuffleArray(players);
 
-    return res.json(players);
+    return res.status(200).json(players);
   } catch (error) {
     return res.status(400).json(error.message);
   }
