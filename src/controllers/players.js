@@ -1,15 +1,19 @@
 const knex = require("../connection");
 
+const shuffleArray = (players) => {
+  players.sort(() => Math.random() - 0.5);
+};
+
 const getPlayers = async (req, res) => {
-  const players = await knex("players");
+  try {
+    const players = await knex("players");
 
-  function shuffleArray(players) {
-    players.sort(() => Math.random() - 0.5);
+    shuffleArray(players);
+
+    return res.json(players);
+  } catch (error) {
+    return res.status(400).json(error.message);
   }
-
-  shuffleArray(players);
-
-  return res.json(players);
 };
 
 module.exports = {
