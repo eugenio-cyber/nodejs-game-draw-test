@@ -1,5 +1,9 @@
+const knex = require("../connection");
+
 const getPlayers = async (req, res) => {
-  return res.json("testando controlador");
+  const players = await knex("players");
+
+  return res.json(players);
 };
 
 module.exports = {
