@@ -5,11 +5,12 @@
 <p align="center">
  <img src="https://img.shields.io/badge/status-em%20andamento-orange?style=for-the-badge"/>
 </p>
+
 <br>
 
 ## 🔗 Quer acessar o projeto?
 
-Não há [link]() para acessar esse projeto. 
+Não há [link]() para acessar o projeto. 
 
 ## 🏹 Qual o objetivo do projeto?
 
